@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="results.html" method="GET">
+        <div class="box">
+            <label for="naam">voornaam</label>
+            <input naam="naam" id="naam" required>
+        </div>
+        <div class="box">
+            <label for="naam">Achternaam</label>
+            <input naam="naam" id="naam" required>
+        </div>
+        <div class="box">
+            <label for="email">Email</label>
+            <input type="email" naam="email" id="email" required>
+        </div>
+    </div>
+    <div class="box">
+        <label>
+            Wachtwoord
+        <input type="password" naam="Wachtwoord" required>
+        </label>
+    </div>
+    <div class="box">
+        <label for="straatnaam">Straatnaam</label>
+        <input type="straatnaam" naam="straatnaam" id="straatnaam" required>
+    </div>
+        <div class="box">
+            <label for="Huisnummer">Huisnummer</label>
+            <input type="number" naam="Huisnummer" id="Huisnummer" min="1" max="2000" required>
+        </div>
+        <div class="box">
+            <label for="plaatsnaam">Plaatsnaam</label>
+            <input type="plaatsnaam" naam="plaatsnaam" id="plaatsnaam">
+        </div>
+        
+        <div class="box">
+            <label for="date">Geboortedatum</label>
+            <input type="date" naam="date" id="date" required>
+        </div>
+        <button class="button" type="button">Wissen</button>
+        <button class="button" type="button">Verzenden</button>
+
+    </form>   
+</body>
+</html>
