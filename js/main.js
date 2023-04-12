@@ -1,9 +1,11 @@
 const labels1 = [
     "radio",
     "laptop",
-    "Playstation 4",
-    "Computer",
-    "Xbox",
+    "oven",
+    "wasmachine",
+    "Kagel",
+    "PC",
+    "air pods"
 ];
 
 const labels2 = [
@@ -30,8 +32,8 @@ const data2 = {
     labels: labels1,
     datasets:[
         {
-            label: "",
-            data: [10000, 5000, 6000, 7000, 1000],
+            label: "Energie verbruik van apparaten in de week",
+            data: [125, 165, 250, 325, 350, 175, 50 ],
             backgroundColors: ['#FF6B6B','#FFD93D','#6BCB77','#4D96FF','#F473B9']
         }
     ]
