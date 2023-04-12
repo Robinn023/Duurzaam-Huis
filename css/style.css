@@ -9,21 +9,6 @@ html{
 }
 
 body{
-<<<<<<< HEAD
-    background-color: lightblue;
-}
-main {
-    width: 100vw;
-    height: 100vh;
-}
-.boxes{
-    align-items: center;
-    height: 100vh;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(20,1fr);
-    grid-template-rows: repeat(20,1fr);
-=======
     font-size: 2rem;
     font-family: sans-serif;
     background: lightblue;
@@ -36,7 +21,6 @@ main {
     width:100%;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
->>>>>>> 0e9cddbf47a9f0a800fb6138df44a68e471aa5b6
     gap: 2rem;
 }
 
