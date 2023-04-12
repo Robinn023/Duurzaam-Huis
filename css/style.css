@@ -7,7 +7,10 @@
 
 body{
     background-color: lightblue;
-    width: 80vw;
+}
+main {
+    width: 100vw;
+    height: 100vh;
 }
 .boxes{
     align-items: center;
@@ -15,7 +18,7 @@ body{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(20,1fr);
-    grid-template-rows: repeat(40,1fr);
+    grid-template-rows: repeat(20,1fr);
     gap: 2rem;
 }
 
