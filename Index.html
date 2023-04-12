@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="R.Y.H groene Energie wij willen er voor zorgen dat iedereen groene energie kan krijgen">
+    <meta name="description" content="R.Y.H groene Energie wij willen groene Energie">
     <title>Dashboard website</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/main.js" defer></script>
 </head>
-<body>
+<body onload="startTime()">
+    <header>
     <li><a href="inlogscherm.html"><h1>Login</h1></a></li>
     <form action="results.html" method="GET"></form>
-    
+    </header>
+    <main>
     <ul class="cards">
         <li class="card card--first">
+            <img src="Logo_bedrijf.png">
         </li>
         <li class="card card--second">
+            <div class="clock">
+                <span id="js--time"></span>
+            </div>
+            <div class="day">
+                <span id="js--day"></span>
+            </div>  
         </li>
         <li class="card card--third">
         </li>
@@ -28,6 +37,6 @@
             <canvas id="js--chart--2"></canvas>
         </li>
     </ul>
-    <Meta Description>
+    </main>
 </body>
 </html>

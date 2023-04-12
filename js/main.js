@@ -52,3 +52,24 @@ const config2 = {
 
 new Chart(document.getElementById("js--chart--1"), config);
 new Chart(document.getElementById("js--chart--2"), config2);
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var d = today.getDate();
+    var y = today.getFullYear();
+    var month = today.getMonth() + 1;
+    h = checkTime(h);
+    m = checkTime(m);
+    document.getElementById("js--time").innerHTML = h + ":" + m;
+    document.getElementById("js--day").innerHTML = d + "-" + month + "-" + y;
+    var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
