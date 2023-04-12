@@ -88,20 +88,20 @@ body{
     align-items: center;
 }
 
-.section--fourth{
-    grid-column: 3/7;
+.card--fourth{
+    grid-column: 3/6;
     grid-row: 1/8;
     background: #eee;
     box-shadow: 0 2rem 5rem 0 rgba(0,0,0,0.2);
 }
 
-.section--fourth{
+.card--fourth{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section--fourth canvas{
+.card--fourth canvas{
     width:100%;
     height:100%;
     object-fit: cover;
@@ -112,20 +112,20 @@ body{
     align-items: center;
 }
 
-.section--fifth{
-    grid-column: 7/13;
+.card--fifth{
+    grid-column: 6/10;
     grid-row: 1/8;
     background: #eee;
     box-shadow: 0 2rem 5rem 0 rgba(0,0,0,0.2);
 }
 
-.section--fifth{
+.card--fifth{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section--fifth canvas{
+.card--fifth canvas{
     width:100%;
     height:100%;
     object-fit: cover;
