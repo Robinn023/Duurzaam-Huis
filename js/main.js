@@ -16,6 +16,16 @@ const labels2 = [
     "Xbox",
 ];
 
+const labels3 = [
+    "januari",
+    "februari",
+    "maart",
+    "april",
+    "mei",
+    "juni"
+];
+
+
 const data1 = {
     labels: labels2,
     datasets: [{
@@ -40,7 +50,20 @@ const data2 = {
 }
 
 
-const config = {
+const data3 = {
+    labels: labels3,
+    datasets:[
+        {
+            label: "Totale energie verbruik per maand",
+            data: [2437, 1689, 2154, 2086, 1799, 2338,  ],
+            backgroundColors: ['','#FFD93D','#6BCB77','#4D96FF','#F473B9, ']
+        }
+    ]
+}
+
+
+
+const config1 = {
     type:'line',
     data: data1,
 }
@@ -50,5 +73,32 @@ const config2 = {
     data: data2,
 }
 
-new Chart(document.getElementById("js--chart--1"), config);
+const config3 = {
+    type:'bar',
+    data: data3,
+}
+
+new Chart(document.getElementById("js--chart--1"), config1);
 new Chart(document.getElementById("js--chart--2"), config2);
+new Chart(document.getElementById("js--chart--3"), config3);
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var d = today.getDate();
+    var y = today.getFullYear();
+    var month = today.getMonth() + 1;
+    h = checkTime(h);
+    m = checkTime(m);
+    document.getElementById("js--time").innerHTML = h + ":" + m;
+    document.getElementById("js--day").innerHTML = d + "-" + month + "-" + y;
+    var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}

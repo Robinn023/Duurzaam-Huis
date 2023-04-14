@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="R.Y.H groene Energie wij willen er voor zorgen dat iedereen groene energie kan krijgen">
-    <title>Dashboard website</title>
+    <meta name="description" content="R.Y.H groene Energie.  wij willen ervoor zorgen dat alle energie groene Energie wordt. 
+    Dit willen we doen doormiddel van windmolens en zonnepanelen">
+    <title> Groene energie Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/main.js" defer></script>
 </head>
-<body>
-    <li><a href="inlogscherm.html"><h1>Login</h1></a></li>
-    <form action="results.html" method="GET"></form>
-    
+<body onload="startTime()">
+    <header>
+        <button>
+            <li><a href="inlogscherm.html"><h1>Login</h1></a></li>
+            <form action="results.html" method="GET"></form>
+        </button>
+    </header>
+    <main>
     <ul class="cards">
         <li class="card card--first">
+            <img src="Logo_bedrijf.png" alt="Logo R.H.Y Groene energie">
         </li>
         <li class="card card--second">
+            <div class="clock">
+                <span id="js--time"></span>
+            </div>
+            <div class="day">
+                <span id="js--day"></span>
+            </div>  
         </li>
         <li class="card card--third">
+            <canvas id="js--chart--3"></canvas>
         </li>
         <li class="card card--fourth">
             <canvas id="js--chart--1"></canvas>
@@ -27,11 +40,8 @@
         <li class="card card--fifth">
             <canvas id="js--chart--2"></canvas>
         </li>
+        
     </ul>
-<<<<<<< HEAD
-
-=======
-    <Meta Description>
->>>>>>> 090d1c0c851ba142f385c184f9babfe8abb9e8b4
+    </main>
 </body>
 </html>
