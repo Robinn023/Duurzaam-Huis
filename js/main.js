@@ -9,11 +9,13 @@ const labels1 = [
 ];
 
 const labels2 = [
-    "Playstation 3",
-    "Nintendo DS",
-    "Playstation 4",
-    "Computer",
-    "Xbox",
+    "Maandag",
+    "Dinsdag",
+    "Woensdag",
+    "Donderdag",
+    "Vrijdag",
+    "Zaterdag",
+    "Zondag",
 ];
 
 const labels3 = [
@@ -29,10 +31,9 @@ const labels3 = [
 const data1 = {
     labels: labels2,
     datasets: [{
-      label: 'Most played console in days',
-      backgroundColor: 'rgb(0, 0, 0)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [20, 10, 35, 45, 3,],
+      label: '',
+      backgroundColors: ['#FF6B6B','#FFD93D','#6BCB77','#4D96FF','#F473B9','#808080',],
+      data: [15, 25, 10, 12.5, 12.5, 12.5, 12.5],
     }]
   };
 
@@ -50,7 +51,7 @@ const data2 = {
 }
 
 const config1 = {
-    type:'line',
+    type:'doughnut',
     data: data1,
 }
 
