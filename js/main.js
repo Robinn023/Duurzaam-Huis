@@ -49,20 +49,6 @@ const data2 = {
     ]
 }
 
-
-const data3 = {
-    labels: labels3,
-    datasets:[
-        {
-            label: "Totale energie verbruik per maand",
-            data: [2437, 1689, 2154, 2086, 1799, 2338,  ],
-            backgroundColors: ['','#FFD93D','#6BCB77','#4D96FF','#F473B9, ']
-        }
-    ]
-}
-
-
-
 const config1 = {
     type:'line',
     data: data1,
@@ -73,14 +59,9 @@ const config2 = {
     data: data2,
 }
 
-const config3 = {
-    type:'bar',
-    data: data3,
-}
-
 new Chart(document.getElementById("js--chart--1"), config1);
 new Chart(document.getElementById("js--chart--2"), config2);
-new Chart(document.getElementById("js--chart--3"), config3);
+
 
 function startTime() {
     var today = new Date();
